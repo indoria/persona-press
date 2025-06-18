@@ -1,0 +1,7 @@
+Flask
+spacy
+openai
+langchain
+chromadb
+python-dotenv
+pytest

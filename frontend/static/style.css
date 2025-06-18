@@ -1,0 +1,210 @@
+:root {
+  --accent: #2369f0;
+  --bg: #f8fafc;
+  --border: #e0e0e0;
+  --shadow: 0 4px 24px 0 rgba(35, 105, 240, 0.08);
+  --card-bg: #fff;
+  --header-bg: #2369f0;
+  --header-fg: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #222;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: var(--shadow);
+  background: var(--card-bg);
+  border-radius: 14px;
+  overflow: hidden;
+  padding-bottom: 32px;
+}
+
+header {
+  background: var(--header-bg);
+  color: var(--header-fg);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  margin: 0 0 10px 0;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 32px 24px;
+}
+
+#press-release-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #f2f7fc;
+  padding: 28px 20px 20px 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+#press-release-input {
+  width: 100%;
+  min-height: 120px;
+  font-size: 1.1rem;
+  padding: 14px;
+  border-radius: 7px;
+  border: 1px solid var(--border);
+  resize: vertical;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+label {
+  font-weight: 500;
+}
+
+#persona-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.persona-card {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 18px;
+  box-shadow: 0 4px 8px #2369f013;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 180px;
+  max-width: 260px;
+  cursor: pointer;
+  transition: border 0.17s, box-shadow 0.17s;
+  position: relative;
+}
+
+.persona-card.selected {
+  border: 2.5px solid var(--accent);
+  box-shadow: 0 8px 24px #2369f027;
+}
+
+.persona-card .name {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.persona-card .traits,
+.persona-card .fairness {
+  font-size: 0.95em;
+  color: #4a4a4a;
+}
+
+.persona-card .fairness {
+  margin-top: 2px;
+  color: #2369f0;
+  font-weight: 500;
+}
+
+#analyze-btn {
+  padding: 14px 0px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.15em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #2369f025;
+  letter-spacing: 1px;
+  margin-top: 6px;
+  transition: background 0.15s;
+}
+#analyze-btn:active {
+  background: #174ca7;
+}
+
+#results-section {
+  margin-top: 30px;
+}
+
+.result-block {
+  margin-bottom: 32px;
+  background: #f6f7fb;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #2369f012;
+  padding: 18px 18px 10px 18px;
+  border: 1px solid var(--border);
+}
+
+.result-block h3 {
+  color: var(--accent);
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.result-content {
+  font-size: 1.07em;
+  white-space: pre-line;
+}
+
+.persona-analysis-block {
+  margin-bottom: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 4px 14px #2369f018;
+  padding: 16px 18px;
+}
+
+.persona-analysis-block h4 {
+  margin: 0 0 9px 0;
+  color: #2369f0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.analysis-section {
+  margin-bottom: 14px;
+}
+
+.analysis-section .label {
+  font-weight: 600;
+  color: #555;
+}
+
+.grades-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+
+.grades-table td, .grades-table th {
+  border: 1px solid #e3e7f2;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.grades-table th {
+  background: #f7faff;
+  color: #2369f0;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  padding: 16px 0 0 0;
+  font-size: 0.96em;
+}

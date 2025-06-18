@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PersonaPress - AI Journalist Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PersonaPress</h1>
+            <p>AI-powered, persona-driven press release analysis</p>
+        </header>
+
+        <main>
+            <form id="press-release-form">
+                <label for="press-release-input">Paste Press Release:</label>
+                <textarea id="press-release-input" placeholder="Paste your press release here..." required></textarea>
+                <div>
+                    <label for="journalists-select">Select Journalist Personas:</label>
+                    <div id="persona-list"></div>
+                </div>
+                <button type="submit" id="analyze-btn">Analyze</button>
+            </form>
+
+            <section id="results-section" style="display:none;">
+                <h2>Analysis Results</h2>
+                <div class="result-block">
+                    <h3>Objective Summary</h3>
+                    <div id="objective-summary" class="result-content"></div>
+                </div>
+                <div id="persona-results"></div>
+            </section>
+        </main>
+        <footer>
+            <span>&copy; 2025 PersonaPress</span>
+        </footer>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
